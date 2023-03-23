@@ -5,6 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudanese Friends of Museums Association</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--jqueryDeclaration to link the definition document for-->
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/09743b710b.js" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //When the document is ready, trigger an event that says, "Execute any statement inside the function."
+        //f(x) = x + 1;
+        //function(x){x + 1} .... The meaning of {} means "=" in a function in general mathematics
+        //The meaning of $ is defined that the contents of the jQuery document will come in from here.
+        $(document).ready(function(){
+            // Trigger an event when the user clicks on a specific object
+            $(".top_btn").click(function(){
+                $("html, body")({scrollTop:$("#header").offset().top}, 1000);
+                //Declaration to grant animation function to the top space <html> tag enclosing the HTML document and the top space <body> composing the actual browser screen. Declaration that the current scroll bar position will be adjusted to the top of the designated place from the top of the browser (animation duration 1000 millie Second = 1 second)
+                return false;  //In the case of a space containing <a>, the href attribute takes precedence.
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="main"><!--w:100%; background image-->
+            <div class="dark"><!--w:100%; blackout treatment-->
+                <div class="wrap"><!--w:1160px; h:66px; central space-->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.jpg" alt="no img">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="story_btn"><a href="#story">الأسئله الشائعة</a></li>
+                            <li class="special_btn"><a href="#special"> معلومات </a></li>
+                            <li class="dishes_btn"><a href="#dishes"> دخول</a></li>
+                            <li class="service_btn"><a href="#service">المدونه</a></li>
+                            <li class="story_btn"><a href="#service">  الفعاليات</a></li>
+                        </ul>
+                        <div class="reseve_btn">
+                            <a href="#">الرئيسية</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_title">
+                    <div class="txt_center">
+                        <h1 class="impact wow fadeInDown">هذا النص يمكن استبداله</h1>
+                        <p class=" wow fadeInUp">هذا النص يمكن استبداله</p>
+                        <ul>
+                            <li class="wow fadeInLeft"><a href="#">المزيد</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.main-->
+    </div><!--/#header-->
 </head>
 <body>
     test for project
