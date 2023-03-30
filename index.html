@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudanese Friends of Museums Association</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--jqueryDeclaration to link the definition document for-->
-    <script src="js/wow.min.js"></script>
-    <script src="https://kit.fontawesome.com/09743b710b.js" crossorigin="anonymous"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script>
-        //When the document is ready, trigger an event that says, "Execute any statement inside the function."
-        //f(x) = x + 1;
-        //function(x){x + 1} .... The meaning of {} means "=" in a function in general mathematics
-        //The meaning of $ is defined that the contents of the jQuery document will come in from here.
-        $(document).ready(function(){
-            // Trigger an event when the user clicks on a specific object
-            $(".top_btn").click(function(){
-                $("html, body")({scrollTop:$("#header").offset().top}, 1000);
-                //Declaration to grant animation function to the top space <html> tag enclosing the HTML document and the top space <body> composing the actual browser screen. Declaration that the current scroll bar position will be adjusted to the top of the designated place from the top of the browser (animation duration 1000 millie Second = 1 second)
-                return false;  //In the case of a space containing <a>, the href attribute takes precedence.
-            });
 
-        });
-    </script>
-</head>
-<body>
-    <div id="header">
-        <div class="main"><!--w:100%; background image-->
-            <div class="dark"><!--w:100%; blackout treatment-->
-                <div class="wrap"><!--w:1160px; h:66px; central space-->
-                    <div class="logo">
-                        <a href="#">
-                            <img src="img/logo.jpg" alt="no img">
-                        </a>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li class="story_btn"><a href="#story">الأسئله الشائعة</a></li>
-                            <li class="special_btn"><a href="#special"> معلومات </a></li>
-                            <li class="dishes_btn"><a href="#dishes"> دخول</a></li>
-                            <li class="service_btn"><a href="#service">المدونه</a></li>
-                            <li class="story_btn"><a href="#service">  الفعاليات</a></li>
-                        </ul>
-                        <div class="reseve_btn">
-                            <a href="#">الرئيسية</a>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sudanese_Friends_of_Museums_Association</title>
+    <link rel="stylesheet" href="css/project.css" />
+    <!-- font awosome  -->
+    <link rel="stylesheet" href="Css/min.css" />
+    <!-- font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,800&display=swap"
+      rel="stylesheet" />
+    <link rel="wepsite icon" href="img/logo.jpg">
+  </head>
+  <body>
+    <header id="header">
+      <a href="img/logo.jpg">
+        <img class="logo" src="img/logo.jpg" alt="SFMA" />
+      </a>
+      <ul>
+        <li><a href="#AFQ">الاسئلة الشائعة</a></li>
+        <li><a href="#info">معلومات</a></li>
+        <li><a href="#in"> دخول</a></li>
+        <li><a href="#mod">المدونه</a></li>
+        <li><a href="#event">الفعاليات</a></li>
+        <li><a href="#home">الرئيسية</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <i id="bar" class="fa-solid fa-bars icon"></i>
+      <i id="ex" class="fa-sharp fa-solid fa-xmark icon"></i>
+      <ul class="pop-menu" id="menu">
+        <li><a href="#AFQ">الاسئلة الشائعة</a></li>
+        <li><a href="#info">معلومات</a></li>
+        <li><a href="#in"> دخول</a></li>
+        <li><a href="#mod">المدونه</a></li>
+        <li><a href="#event">الفعاليات</a></li>
+        <li><a href="#home">الرئيسية/a></li>
+      </ul>
+      <img src="img/1.jpg" alt="" id="faculty" style="z-index: 1" />
+      <a href="" id="btn">المذيد</a>
+      <div class="cards">
+        <div class="card">
+          <div class="data">
+            <h2>أهدافنا </h2>
+            <p>
+              اااا
+            </p>
+            <a href="#">المذيد</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="data">
+            <h2>رسالتنا</h2>
+            <p>
+               اااا
+            </p>
+            <a href="#">المذيد</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="data">
+            <h2>رؤيتنا</h2>
+            <p>
+            ااااا
+            </p>
+            <a href="#">المذيد</a>
+          </div>
+        </div>
+      </div>
+       
+    </section>
+    <div class="image">
+      <h2>عن الجمعية</h2>
+      <h1>هذا قابل للتغيير</h1>
+      
+      <img src="img/1.jpg" alt="ss"/>
+      <h2>uk </h2>
 
-                <div class="main_title">
-                    <div class="txt_center">
-                        <h1 class="impact wow fadeInDown">هذا النص يمكن استبداله</h1>
-                        <p class=" wow fadeInUp">هذا النص يمكن استبداله</p>
-                        <ul>
-                            <li class="wow fadeInLeft"><a href="#">المزيد</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.main-->
-    </div><!--/#header-->
-</head>
-<body>
-    test for project
-    <p> hello </p>
+    </div>
+  
+    <script src="project.js"></script>
+     
 </body>
 </html>
