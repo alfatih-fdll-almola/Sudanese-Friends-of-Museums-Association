@@ -61,7 +61,7 @@ body {
   justify-content: space-between;
   z-index: 1000;
   max-height: 100vh;
-  background-color: rgb(22 34 56 / 91%);
+  background-color:#D9D9D9;
   height: 85px;
 }
 
@@ -188,18 +188,17 @@ section img {
 }
 
 section #text {
-  position: absolute;
-  color: var(--yellow-color);
+  position: relative;
+  color: #333;
   text-align: center;
   font-size: 50px;
-  text-transform: uppercase;
   transform: translateY(10px);
   z-index: 2;
   line-height: 1;
 }
 
 section #text span {
-  color: var(--body-colr);
+  color: #333;
   font-weight: 400;
   font-size: 38px;
   letter-spacing: 7px;
@@ -208,8 +207,8 @@ section #text span {
 section #btn {
   position: absolute;
   text-decoration: none;
-  color: var(--white-color);
-  background-color: var(--yellow-color);
+  color: #333;;
+  background-color: #FFF;
   padding: 10px 10px;
   transform: translateY(150px);
   border-radius: 15px;
@@ -232,21 +231,21 @@ section #btn:hover {
 
 .cards {
   display: flex;
-  gap: 20px;
-  padding: 10px 15px;
-  z-index: 10000;
-  height: 400px;
-  position: absolute;
+  gap: 5px;
+  padding: 10px 10px;
+  z-index: 500;
+  height: 200px;
   top: calc(100vh - 130px);
+  background-color:#D9D9D9;
+  
 }
 
 .cards .card {
-  background-color: var(--body-colr);
-  color: var(--white-color);
-  padding: 12px;
-  display: flex;
+  background-color:#FFF;
+  color:#D9D9D9;
+  padding: 500px;
   flex-direction: column;
-  gap: 15px;
+  gap: 100px;
   text-align: start;
   width: 300px;
   max-height: 102px;
@@ -255,36 +254,15 @@ section #btn:hover {
   display: block;
   text-align: right;
 }
-
-.cards .card:hover {
-  background-color: var(--yellow-color);
-  max-height: 300px;
-  transform: translateY(-220px);
-}
-
-@media (max-width: 767px) {
-  .cards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    top: calc(100vh - 200px);
-    gap: 1px;
-  }
-
   .cards .card {
+    display: block;
     width: 100%;
-    padding: 5px 50px;
+    padding: 10px 10px;
   }
-
-  .cards .card:hover {
-    transform: translateY(-100px);
-  }
-}
-
 .cards .card .data p {
   display: block;
   line-height: 35px;
-  padding: 15px 0;
+  padding: 5px 0;
   transition: 0.3s;
   transition-delay: 0.4s;
   visibility: hidden;
@@ -303,10 +281,6 @@ section #btn:hover {
 .cards .card:hover a {
   display: block;
   visibility: visible;
-}
-
-.cards .card a:hover {
-  color: var(--body-colr);
 }
 
 .cards .card .data a:hover {
